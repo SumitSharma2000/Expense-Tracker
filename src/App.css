@@ -11,18 +11,15 @@
 
 body {
   background-color: #f7f7f7;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
 
 .container {
-  margin: 30px auto;
-  width: 350px;
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width as needed */
+  margin: 0 auto;
+  padding: 0 20px; /* Add padding to prevent content from sticking to edges */
 }
 
 h1 {
@@ -39,6 +36,7 @@ h3 {
 h4 {
   margin: 0;
   text-transform: uppercase;
+  color:#775ef1
 }
 
 .inc-exp-container {
@@ -161,6 +159,9 @@ input[type='number'] {
 .header-title {
   font-family: "Great Vibes", cursive; ;
   margin: 0;
+  margin-top: 80px;
+  font-size: 50px;
+  margin-left: 2%;
 }
 
 .dark-mode {
@@ -173,8 +174,8 @@ input[type='number'] {
   color: #333;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .container {
-    width: 300px;
+    padding: 0 10px; /* Adjust padding for smaller screens */
   }
 }
